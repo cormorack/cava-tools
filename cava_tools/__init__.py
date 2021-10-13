@@ -1,5 +1,7 @@
 from pkg_resources import DistributionNotFound, get_distribution
 
+from cava_tools import discrete_summary
+
 try:
     VERSION = get_distribution(__name__).version
 except DistributionNotFound:  # pragma: no cover
@@ -12,3 +14,6 @@ except DistributionNotFound:  # pragma: no cover
             "use the PyPI ones."
         )
 __version__ = VERSION
+
+
+__all__ = ["discrete_summary"]
