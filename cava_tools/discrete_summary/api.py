@@ -5,11 +5,14 @@ import pandas as pd
 from loguru import logger
 from typing_extensions import Literal
 
+# fmt: off
 from cava_tools.discrete_summary.parser import (clean_discrete_summary,
                                                 get_ds_labels,
                                                 get_folder_contents,
                                                 parse_profile_and_discrete)
 from cava_tools.discrete_summary.validator import check_types_and_replace
+
+# fmt: on
 
 HERE = Path(__file__).parent
 SOURCEDF = pd.read_csv(HERE.joinpath("data/source.csv"), index_col="cruise_id")
