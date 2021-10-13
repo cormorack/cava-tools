@@ -1,0 +1,81 @@
+summaryColumn,source
+Cruise,metadataDict
+Station,metadataDict
+Target Asset,metadataDict
+Start Latitude [degrees],"bottleDict,df_CastLog_ROV"
+Start Longitude [degrees],"bottleDict,df_CastLog_ROV"
+Start Time [UTC],"bottleDict,df_CastLog_ROV"
+Cast,df_samples
+Cast Flag,metadataDict
+Bottom Depth at Start Position [m],metadataDict
+CTD File,metadataDict
+CTD File Flag,metadataDict
+Niskin/Bottle Position,df_samples
+Niskin Flag,df_samples
+CTD Bottle Closure Time [UTC],"bottleDict_bottle,df_CastLog_ROV"
+CTD Pressure [db],"bottleDict_bottle,ROVdict"
+CTD Pressure Flag,"df_CTDflags,df_CTDflags_ROV"
+CTD Depth [m],"bottleDict_bottle,fill"
+CTD Latitude [deg],"bottleDict_bottle,fill"
+CTD Longitude [deg],"bottleDict_bottle,fill"
+CTD Temperature 1 [deg C],"bottleDict_bottle,ROVdict"
+CTD Temperature 1 Flag,"df_CTDflags,df_CTDflags_ROV"
+CTD Temperature 2 [deg C],"bottleDict_bottle,fill"
+CTD Temperature 2 Flag,"df_CTDflags,fill"
+CTD Conductivity 1 [S/m],"bottleDict_bottle,ROVdict"
+CTD Conductivity 1 Flag,"df_CTDflags,df_CTDflags_ROV"
+CTD Conductivity 2 [S/m],"bottleDict_bottle,fill"
+CTD Conductivity 2 Flag,"df_CTDflags,fill"
+CTD Salinity 1 [psu],"bottleDict_bottle,ROVdict"
+CTD Salinity 2 [psu],"bottleDict_bottle,fill"
+CTD Oxygen [mL/L],"bottleDict_bottle,fill"
+CTD Oxygen Flag,"df_CTDflags,fill"
+CTD Oxygen Saturation [mL/L],"bottleDict_bottle,fill"
+CTD Fluorescence [mg/m^3],"bottleDict_bottle,fill"
+CTD Fluorescence Flag,"df_CTDflags,fill"
+CTD Beam Attenuation [1/m],"bottleDict_bottle,fill"
+CTD Beam Transmission [%],"bottleDict_bottle,fill"
+CTD Transmissometer Flag,"df_CTDflags,fill"
+CTD pH,"bottleDict_bottle,fill"
+CTD pH Flag,"df_CTDflags,fill"
+Discrete Oxygen [mL/L],df_oxygen
+Discrete Oxygen Flag,df_samples
+Discrete Oxygen Replicate Flag,df_samples
+Discrete Chlorophyll [ug/L],df_fluor
+Discrete Phaeopigment [ug/L],df_fluor
+Discrete Fo/Fa Ratio,df_fluor
+Discrete Fluorescence Flag,df_samples
+Discrete Fluorescence Replicate Flag,df_samples
+Discrete Phosphate [uM],df_nuts
+Discrete Silicate [uM],df_nuts
+Discrete Nitrate [uM],df_nuts
+Discrete Nitrite [uM],df_nuts
+Discrete Ammonium [uM],df_nuts
+Discrete Nutrients Flag,df_samples
+Discrete Nutrients Replicate Flag,df_samples
+Discrete Salinity [psu],df_sal
+Discrete Salinity Flag,df_samples
+Discrete Salinity Replicate Flag,df_samples
+Discrete Alkalinity [umol/kg],df_DIC
+Discrete Alkalinity Flag,df_samples
+Discrete Alkalinity Replicate Flag,df_samples
+Discrete DIC [umol/kg],df_DIC
+Discrete DIC Flag,df_samples
+Discrete DIC Replicate Flag,df_samples
+Discrete pCO2 [uatm],df_DIC
+pCO2 Analysis Temp [deg C],df_DIC
+Discrete pCO2 Flag,df_samples
+Discrete pCO2 Replicate Flag,df_samples
+Discrete pH [Total scale],df_DIC
+pH Analysis Temp [deg C],df_DIC
+Discrete pH Flag,df_samples
+Discrete pH Replicate Flag,df_samples
+Calculated Alkalinity [umol/kg],df_DIC
+Calculated DIC [umol/kg],df_DIC
+Calculated pCO2 [uatm],df_DIC
+Calculated pH,df_DIC
+Calculated CO2aq [umol/kg],df_DIC
+Calculated Bicarb [umol/kg],df_DIC
+Calculated CO3 [umol/kg],df_DIC
+Calculated Omega-C,df_DIC
+Calculated Omega-A,df_DIC
