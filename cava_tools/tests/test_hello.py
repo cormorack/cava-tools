@@ -1,4 +1,4 @@
-from cava_project import hello
+from cava_tools import hello
 
 
 def test_hello():

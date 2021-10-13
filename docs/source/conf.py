@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "cava_project"
+project = "cava_tools"
 copyright = "2021, Landung Setiawan"
 author = "Landung Setiawan"
 
