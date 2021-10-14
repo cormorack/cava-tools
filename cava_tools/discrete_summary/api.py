@@ -118,7 +118,9 @@ def get_latest_content(
         return latest
 
 
-def read_and_clean(discrete_summaries: pd.DataFrame) -> Tuple[dict]:
+def read_and_clean(
+    discrete_summaries: Union[pd.DataFrame, pd.Series]
+) -> Tuple[dict]:  # noqa
     """
     Reads in discrete summaries csvs and cleans them by
     putting them through various validations.
@@ -132,9 +134,13 @@ def read_and_clean(discrete_summaries: pd.DataFrame) -> Tuple[dict]:
     -------
     tuple
     """
+    if isinstance(discrete_summaries, pd.Series):
+        discrete_summaries = pd.DataFrame([discrete_summaries.to_dict()])
     unique_kinds = discrete_summaries["kind"].unique()
     if len(unique_kinds) != 1:
-        raise ValueError("Multiple kinds of files are not acceptable!")
+        raise ValueError(
+            "Multiple kinds of files are not acceptable! summary is expected for this method"  # noqa
+        )
     elif unique_kinds[0] != "summary":
         raise ValueError("Only summary files are accepted.")
 
