@@ -119,7 +119,7 @@ def get_latest_content(
 
 
 def read_and_clean(
-    discrete_summaries: Union[pd.DataFrame, pd.Series]
+    discrete_summaries: Union[pd.DataFrame, pd.Series],
 ) -> Tuple[dict]:  # noqa
     """
     Reads in discrete summaries csvs and cleans them by
@@ -191,7 +191,7 @@ def read_and_clean(
 
 
 def split_summary_data(
-    svdf_dict: Dict[str, pd.DataFrame]
+    svdf_dict: Dict[str, pd.DataFrame],
 ) -> Dict[str, pd.DataFrame]:  # noqa
     """Split discrete summary data to profile and discrete"""
     profile_list, discrete_list = [], []
